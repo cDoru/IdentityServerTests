@@ -1,11 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
-using System.Web.Http;
+﻿using System.Web.Http;
 using Microsoft.Owin;
+using MRTutorial.Identity.Client.Controllers;
 using Owin;
 using Thinktecture.IdentityServer.AccessTokenValidation;
 
-[assembly: OwinStartup(typeof(MRTutorial.Identity.Client.Controllers.Startup))]
+[assembly: OwinStartup(typeof(Startup))]
 
 namespace MRTutorial.Identity.Client.Controllers
 {
